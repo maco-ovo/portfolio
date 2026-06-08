@@ -1,137 +1,135 @@
-
 .skills-section {
-    max-width: 1000px;
-    margin: 60px auto 100px auto;
-    padding: 0 20px;
+	max-width: 1000px;
+	margin: 60px auto 100px auto;
+	padding: 0 20px;
 }
 
 .section-title {
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 300;
-    margin-bottom: 60px;
-    color: var(--text-main);
+	text-align: center;
+	font-size: 3rem;
+	font-weight: 300;
+	margin-bottom: 60px;
+	color: var(--text-main);
 }
 
 /* Skills Cards */
 .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 40px;
 }
 
-
 .skill-card {
-    background: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(12px);
-    border: 1px solid var(--glass-border);
-    border-radius: 30px;
-    padding: 40px;
-    box-shadow: var(--glass-shadow);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+	background: rgba(255, 255, 255, 0.5);
+	backdrop-filter: blur(12px);
+	border: 1px solid var(--glass-border);
+	border-radius: 30px;
+	padding: 40px;
+	box-shadow: var(--glass-shadow);
+	transition:
+		transform 0.3s ease,
+		box-shadow 0.3s ease;
 }
 
 .skill-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(31, 38, 135, 0.1);
+	transform: translateY(-5px);
+	box-shadow: 0 15px 35px rgba(31, 38, 135, 0.1);
 }
 
 .skill-card h2 {
-    font-size: 1.6rem;
-    font-weight: 400;
-    margin-bottom: 25px;
-    text-align: center;
-    color: var(--text-main);
+	font-size: 1.6rem;
+	font-weight: 400;
+	margin-bottom: 25px;
+	text-align: center;
+	color: var(--text-main);
 }
-
 
 /* Tag Container */
 .skill-tags {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-content: center;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	align-content: center;
 }
-
 
 /* Floating Tags */
 .skill-tag {
-    display: inline-flex; 
-    align-items: center;
-    gap: 8px;
-    
-    background: rgba(255, 255, 255, 0.7);
-    border: 1px solid rgba(255, 255, 255, 0.9);
-    color: var(--text-main);
-    padding: 10px 20px;
-    border-radius: 25px;
-    font-size: 0.95rem;
-    font-weight: 400;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
-    transition: all 0.2s ease;
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+
+	background: rgba(255, 255, 255, 0.7);
+	border: 1px solid rgba(255, 255, 255, 0.9);
+	color: var(--text-main);
+	padding: 10px 20px;
+	border-radius: 25px;
+	font-size: 0.95rem;
+	font-weight: 400;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+	transition: all 0.2s ease;
 }
 
-
-
 .skill-tag:hover {
-    background: var(--accent-blue);
-    color: white;
-    border-color: var(--accent-blue);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(106, 185, 224, 0.3);
+	background: var(--accent-blue);
+	color: white;
+	border-color: var(--accent-blue);
+	transform: translateY(-2px);
+	box-shadow: 0 6px 15px rgba(106, 185, 224, 0.3);
 }
 
 .skill-tag:hover i {
-    color: white;
+	color: white;
 }
-
 
 /* --- Soft Skills Layout --- */
 .soft-skills-card {
-    grid-column: 1 / -1; 
+	grid-column: 1 / -1;
 }
 
 .soft-skills-flex {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    justify-content: space-evenly;
-    margin-top: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px;
+	justify-content: space-evenly;
+	margin-top: 10px;
 }
 
 .soft-category {
-    flex: 1;
-    min-width: 280px;
+	flex: 1;
+	min-width: 280px;
 }
 
 .soft-category h3 {
-    font-size: 1.2rem;
-    font-weight: 300;
-    margin-bottom: 20px;
-    text-align: center;
-    color: var(--text-light);
-    border-bottom: 1px solid var(--glass-border);
-    padding-bottom: 10px;
+	font-size: 1.2rem;
+	font-weight: 300;
+	margin-bottom: 20px;
+	text-align: center;
+	color: var(--text-light);
+	border-bottom: 1px solid var(--glass-border);
+	padding-bottom: 10px;
+}
+
+.two-cols {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 15px;
+}
+
+.two-cols .skill-tag {
+	width: 100%;
+	justify-content: flex-start;
 }
 
 /* ----- Mobile Responsiveness ----- */
 @media (max-width: 768px) {
-    .section-title {
-        font-size: 2.2rem;
-    }
-    .soft-skills-flex {
-        flex-direction: column; 
-        gap: 30px;
-    }
-}
-
-/* ----- Mobile Responsiveness ----- */
-@media (max-width: 768px) {
-    .section-title {
-        font-size: 2.2rem;
-    }
-    .soft-skills-flex {
-        flex-direction: column; 
-        gap: 30px;
-    }
+	.section-title {
+		font-size: 2.2rem;
+	}
+	.soft-skills-flex {
+		flex-direction: column;
+		gap: 30px;
+	}
+	.two-cols {
+		grid-template-columns: 1fr;
+	}
 }
